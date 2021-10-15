@@ -84,6 +84,12 @@ dependencies {
 
     implementation files("$rootDir/LibrariesAndUtilities/ATAResources.jar")
     implementation project('LibrariesAndUtilities:LessonPlanResources')
+
+    // Start - added by Frank in attempt ot gain access to aws packages
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
+    implementation 'com.amazonaws:aws-java-sdk-s3'
+    implementation 'com.amazonaws:aws-java-sdk-core'
+    // End - added by Frank in attempt ot gain access to aws packages
 }
 
 test {
